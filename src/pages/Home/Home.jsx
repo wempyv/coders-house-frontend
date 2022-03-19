@@ -14,7 +14,7 @@ const Home = () => {
   const history = useHistory();
 
   function startRegister() {
-    history("/register");
+    history.push("/authenticate");
   }
 
   return (
@@ -26,13 +26,7 @@ const Home = () => {
           sure nothing breaks
         </p>
         <div>
-          <Button text="Get your username" onClick={startRegister} />
-        </div>
-        <div className={styles.signinWrapper}>
-          <span className={styles.hasInvite}>Have an invite text ? </span>
-          <Link style={signInLinkStyle} to="/login">
-            Sign in
-          </Link>
+          <Button text="Let's Go" onClick={startRegister} />
         </div>
       </Card>
     </div>

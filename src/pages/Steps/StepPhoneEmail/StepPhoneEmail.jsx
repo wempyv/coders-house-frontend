@@ -1,11 +1,22 @@
 import React from "react";
 
+const phoneEmailMap = {
+  phone: Phone,
+  email: Email,
+};
+
 const StepPhoneEmail = ({ onNext }) => {
+  const [type, setType] = useState("phone");
+  const Component = phoneEmailMap[type];
+
+  function onNext() {
+    setStep(step + 1);
+  }
+
   return (
-    <>
-      <div>Phone or Email component</div>
-      <button onClick={onNext}>Next</button>
-    </>
+    <div>
+      <Component onNext={onNext} />
+    </div>
   );
 };
 

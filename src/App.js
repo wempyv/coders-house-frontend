@@ -4,9 +4,9 @@ import Home from './pages/Home/Home';
 import Navigation from './components/shared/Navigation/Navigation';
 import Authenticate from './pages/Authenticate/Authenticate';
 import Activate from './pages/Activate/Activate';
-import Home from './pages/Home/Home';
+import Rooms from './pages/Rooms/Rooms';
 
-const isAuth = true;
+const isAuth = false;
 const user = {
   activated: false
 }
