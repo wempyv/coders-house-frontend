@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import styles from "./Home.module.css";
 import Card from "../../components/shared/Card/Card";
 import Button from "../../components/shared/Button/Button";
@@ -11,7 +11,7 @@ const Home = () => {
     textDecoration: "none",
   };
 
-  const history = useNavigate();
+  const history = useHistory();
 
   function startRegister() {
     history("/register");
